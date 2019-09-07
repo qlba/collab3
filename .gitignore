@@ -139,6 +139,8 @@ dkms.conf
 ## Custom
 
 config.tex
+*.markdown.*
+_markdown_*
 
 ## Core latex/pdflatex auxiliary files:
 
