@@ -136,6 +136,10 @@ dkms.conf
 
 ### LaTeX ###
 
+## Custom
+
+config.tex
+
 ## Core latex/pdflatex auxiliary files:
 
 *.aux
@@ -175,7 +179,7 @@ dkms.conf
 
 # *.eps
 
-# *.pdf
+*.pdf
 
 
 ## Generated if empty string is given at "Please type another file name for output:"
@@ -1597,3 +1601,4 @@ MigrationBackup/
 
 
 # End of https://www.gitignore.io/api/c,qt,c++,latex,python,qtcreator,visualstudio,visualstudiocode
+
