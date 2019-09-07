@@ -27,3 +27,5 @@ python build.py
 :end
 
 pdflatex --shell-escape lab.tex
+rmdir /s /q _markdown_lab
+del lab.markdown.in lab.markdown.lua lab.markdown.out lab.log lab.aux
