@@ -44,14 +44,14 @@ pdflatex --shell-escape --halt-on-error --interaction=batchmode lab.tex
 echo -------------------------
 echo Удаление временных файлов
 echo -------------------------
-rmdir /s /q _markdown_lab
-del lab.markdown.in
-del lab.markdown.lua
-del lab.markdown.out
-del lab.log
-del lab.aux
-del lab.out
-del lab.fls
-del lab.fdb_latexmk
-del lab.synctex.gz
+rmdir /s /q _markdown_lab 2> nul
+del lab.markdown.in 2> nul
+del lab.markdown.lua 2> nul
+del lab.markdown.out 2> nul
+del lab.log 2> nul
+del lab.aux 2> nul
+del lab.out 2> nul
+del lab.fls 2> nul
+del lab.fdb_latexmk 2> nul
+del lab.synctex.gz 2> nul
 pause
