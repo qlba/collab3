@@ -25,7 +25,28 @@ if "%newest%"=="%file1%" (
 python build.py
 
 :end
+echo -------------------
+echo Компиляция Markdown
+echo -------------------
+pandoc -o task_md.tex task.md
+pandoc -o work_progress_md.tex work_progress.md
 
-pdflatex --shell-escape lab.tex
+echo ----------------
+echo Компиляция LaTeX
+echo ----------------
+pdflatex --shell-escape --halt-on-error --interaction=batchmode lab.tex
+
+echo -------------------------
+echo Удаление временных файлов
+echo -------------------------
 rmdir /s /q _markdown_lab
-del lab.markdown.in lab.markdown.lua lab.markdown.out lab.log lab.aux
+del lab.markdown.in
+del lab.markdown.lua
+del lab.markdown.out
+del lab.log
+del lab.aux
+del lab.out
+del lab.fls
+del lab.fdb_latexmk
+del lab.synctex.gz
+pause
