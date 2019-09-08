@@ -32,6 +32,9 @@
 
 %%  Центровка картинок
 \setkeys{Gin}{width=0.5\linewidth}
+\makeatletter
+\g@addto@macro\@floatboxreset\centering
+\makeatother
 
 %% Списки pandoc
 \providecommand{\tightlist}{%
