@@ -1,5 +1,7 @@
 @echo off
-
+echo -------------------
+echo Считываем конфиг
+echo -------------------
 set file1=conf.json
 set file2=config.tex
 
@@ -30,7 +32,10 @@ echo Компиляция Markdown
 echo -------------------
 pandoc -o task_md.tex task.md
 pandoc -o work_progress_md.tex work_progress.md
-
+echo -------------------
+echo Добавление исходников
+echo -------------------
+python build_listings.py
 echo ----------------
 echo Компиляция LaTeX
 echo ----------------
