@@ -21,9 +21,9 @@ def pick_sources():
             write_file.write(r"\textbf{{Содержимое файла {}}}".format(f) + "\n")
             lang = guess_lang(f)
             if lang:
-                write_file.write(r"\inputminted{{{}}}{{{}}}".format(lang, os.path.join("source", f)) + "\n")
+                write_file.write(r"\inputminted{{{}}}{{{}}}".format(lang, "source/" + f) + "\n")
             else:
-                write_file.write(r"\inputminted{{}}{{{}}}".format(os.path.join("source", f)) + "\n")
+                write_file.write(r"\inputminted{{}}{{{}}}".format(os.path.join("source/", f)) + "\n")
 
 if __name__=="__main__":
     pick_sources()

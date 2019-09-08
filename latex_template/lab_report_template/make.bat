@@ -39,7 +39,13 @@ python build_listings.py
 echo ----------------
 echo Компиляция LaTeX
 echo ----------------
-pdflatex --shell-escape --halt-on-error --interaction=batchmode lab.tex
+pdflatex --shell-escape --halt-on-error lab.tex
+
+if %ERRORLEVEL% NEQ 0 ( 
+    echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    echo Компиляция завершилась с ошибкой
+    echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+)
 
 echo -------------------------
 echo Удаление временных файлов
