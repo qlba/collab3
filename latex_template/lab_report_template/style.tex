@@ -19,6 +19,7 @@
 \setlength{\headheight}{4mm}
 }
 
+%% Секции без нумерации
 \makeatletter
 \def\@seccntformat#1{%
   \expandafter\ifx\csname c@#1\endcsname\c@section\else
@@ -26,8 +27,10 @@
   \fi}
 \makeatother
 
+%% Курсивный курсив
 \pagestyle{plain}
 
+%%  Центровка картинок
 \setkeys{Gin}{width=0.5\linewidth}
 
 %% Списки pandoc
@@ -72,3 +75,5 @@
 \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
 \newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
 \newcommand{\NormalTok}[1]{#1}
+
+\definecolor{lbcolor}{rgb}{248,248,248}
