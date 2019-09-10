@@ -33,7 +33,7 @@ echo -------------------
 pandoc -o task_md.tex task.md
 pandoc -o work_progress_md.tex work_progress.md
 echo -------------------
-echo Добавление исходников
+echo Сборка листингов
 echo -------------------
 python build_listings.py
 echo ----------------
