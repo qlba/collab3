@@ -17,7 +17,7 @@ def pick_sources():
     source_files = get_files("source")
     if not source_files:
         exit()
-    with open("listings.tex", "w", encoding='utf-8') as write_file:
+    with open("tex_files/listings.tex", "w", encoding='utf-8') as write_file:
         write_file.write(r"\section{Приложение}" + "\n")
         for f in source_files:
             write_file.write(r"\textbf{{Содержимое файла {}}}".format(f) + "\n")
