@@ -1,5 +1,6 @@
 #!/bin/bash
-if [ ! -f "config.tex" ] || [ "conf.json" -nt "config.tex" ] ; then
+if [ ! -f "config.tex" ] || [ "conf.json" -nt "config.tex" ] ; then aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+if [ ! -f "config.tex" ] || [ "conf.json" -nt "config.tex" ] ; then aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     python build.py
 fi
 pdflatex --shell-escape lab.tex
