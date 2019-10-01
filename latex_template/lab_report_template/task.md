@@ -4,3 +4,5 @@
 2. вот эту 
 3. и еще вот эту 
 4. ну и картинку на ![task 4](files\task_pic.png)
+
+![ДАРОВА](files\task_pic.png)
