@@ -34,10 +34,16 @@
 \pagestyle{plain}
 
 %%  Центровка картинок
-\setkeys{Gin}{width=0.5\linewidth}
+\setkeys{Gin}{width=\linewidth}
+\floatplacement{figure}{H}
 \makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+\else\Gin@nat@width\fi}
 \g@addto@macro\@floatboxreset\centering
 \makeatother
+\let\Oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=0.5\maxwidth]{#1}}
+
 
 %% Списки pandoc
 \providecommand{\tightlist}{%
