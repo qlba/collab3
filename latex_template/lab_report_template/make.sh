@@ -23,6 +23,7 @@ echo ----------------
 echo Компиляция LaTeX
 echo ----------------
 pdflatex --shell-escape ${TEX_DIR}/lab.tex | grep '^!.*' -A200 --color=always 
+pdflatex --shell-escape ${TEX_DIR}/lab.tex | grep '^!.*' -A200 --color=always 
 
 echo -------------------------
 echo Удаление временных файлов
