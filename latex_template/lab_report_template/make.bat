@@ -43,7 +43,7 @@ echo ----------------
 echo Компиляция LaTeX
 echo ----------------
 pdflatex --shell-escape --halt-on-error %tex_dir%/lab.tex
-
+pdflatex --shell-escape --halt-on-error %tex_dir%/lab.tex
 if %ERRORLEVEL% NEQ 0 ( 
     echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     echo Компиляция завершилась с ошибкой
