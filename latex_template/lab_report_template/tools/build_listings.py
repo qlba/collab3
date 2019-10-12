@@ -5,8 +5,11 @@ import fnmatch
 import lexer_list
 
 def get_files(path = "."):
-    return [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
-
+    if os.path.exists(path):
+        return [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
+    else:
+        return []
+        
 def guess_lang(file_name):
     for guess in lexer_list.lexer_list:
         if fnmatch.fnmatch(file_name, guess[0]):
